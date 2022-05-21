@@ -27,11 +27,16 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+  padding: 0;  
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;  
 }
 
 img{
@@ -219,6 +224,30 @@ img{
   margin-top: 5px;
   margin-bottom: 30px;
   margin-left: 0px;
+}
+
+.buttons {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #314652;
+  color: #ff9c3ee8;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
 }
 
   /* footer */
